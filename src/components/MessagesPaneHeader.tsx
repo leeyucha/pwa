@@ -1,7 +1,7 @@
 import {
   ArrowBackIosNewRounded,
   Circle,
-  MoreVertRounded,
+  MenuRounded,
   PhoneInTalkRounded,
 } from "@mui/icons-material";
 import Avatar from "@mui/joy/Avatar";
@@ -11,7 +11,7 @@ import IconButton from "@mui/joy/IconButton";
 import Stack from "@mui/joy/Stack";
 import Typography from "@mui/joy/Typography";
 import { UserProps } from "../types";
-import { toggleMessagesPane } from "../utils";
+import { toggleMessagesPane, toggleSidebar } from "../utils";
 
 type MessagesPaneHeaderProps = {
 	sender: UserProps;
@@ -97,8 +97,17 @@ export default function MessagesPaneHeader({
 					View profile
 				</Button>
 
-				<IconButton size="sm" variant="plain" color="neutral">
+				{/* <IconButton size="sm" variant="plain" color="neutral">
 					<MoreVertRounded />
+				</IconButton> */}
+				<IconButton
+					sx={{ display: { md: "none" } }}
+					onClick={() => toggleSidebar()}
+					variant="outlined"
+					color="neutral"
+					size="sm"
+				>
+					<MenuRounded />
 				</IconButton>
 			</Stack>
 		</Stack>
