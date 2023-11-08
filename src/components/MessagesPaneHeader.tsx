@@ -1,7 +1,9 @@
-import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
-import CircleIcon from "@mui/icons-material/Circle";
-import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
-import PhoneInTalkRoundedIcon from "@mui/icons-material/PhoneInTalkRounded";
+import {
+  ArrowBackIosNewRounded,
+  Circle,
+  MoreVertRounded,
+  PhoneInTalkRounded,
+} from "@mui/icons-material";
 import Avatar from "@mui/joy/Avatar";
 import Button from "@mui/joy/Button";
 import Chip from "@mui/joy/Chip";
@@ -40,7 +42,7 @@ export default function MessagesPaneHeader({
 					}}
 					onClick={() => toggleMessagesPane()}
 				>
-					<ArrowBackIosNewRoundedIcon />
+					<ArrowBackIosNewRounded />
 				</IconButton>
 				<Avatar size="lg" src={sender.avatar} />
 				<div>
@@ -58,7 +60,7 @@ export default function MessagesPaneHeader({
 									sx={{
 										borderRadius: "sm",
 									}}
-									startDecorator={<CircleIcon sx={{ fontSize: 8 }} color="success" />}
+									startDecorator={<Circle sx={{ fontSize: 8 }} color="success" />}
 									slotProps={{ root: { component: "span" } }}
 								>
 									Online
@@ -74,7 +76,7 @@ export default function MessagesPaneHeader({
 			</Stack>
 			<Stack spacing={1} direction="row" alignItems="center">
 				<Button
-					startDecorator={<PhoneInTalkRoundedIcon />}
+					startDecorator={<PhoneInTalkRounded />}
 					color="neutral"
 					variant="outlined"
 					size="sm"
@@ -96,7 +98,7 @@ export default function MessagesPaneHeader({
 				</Button>
 
 				<IconButton size="sm" variant="plain" color="neutral">
-					<MoreVertRoundedIcon />
+					<MoreVertRounded />
 				</IconButton>
 			</Stack>
 		</Stack>

@@ -1,6 +1,8 @@
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import EditNoteRoundedIcon from "@mui/icons-material/EditNoteRounded";
-import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import {
+  CloseRounded,
+  EditNoteRounded,
+  SearchRounded,
+} from "@mui/icons-material";
 import { Box, Chip, IconButton, Input } from "@mui/joy";
 import List from "@mui/joy/List";
 import Sheet from "@mui/joy/Sheet";
@@ -64,7 +66,7 @@ export default function ChatsPane({
 					size="sm"
 					sx={{ display: { xs: "none", sm: "unset" } }}
 				>
-					<EditNoteRoundedIcon />
+					<EditNoteRounded />
 				</IconButton>
 
 				<IconButton
@@ -77,13 +79,13 @@ export default function ChatsPane({
 					}}
 					sx={{ display: { sm: "none" } }}
 				>
-					<CloseRoundedIcon />
+					<CloseRounded />
 				</IconButton>
 			</Stack>
 			<Box sx={{ px: 2, pb: 1.5 }}>
 				<Input
 					size="sm"
-					startDecorator={<SearchRoundedIcon />}
+					startDecorator={<SearchRounded />}
 					placeholder="Search"
 					aria-label="Search"
 				/>
