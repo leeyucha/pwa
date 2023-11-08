@@ -1,6 +1,6 @@
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { MenuRounded } from "@mui/icons-material";
+import { IconButton } from "@mui/joy";
 import GlobalStyles from "@mui/joy/GlobalStyles";
-import IconButton from "@mui/joy/IconButton";
 import Sheet from "@mui/joy/Sheet";
 import { toggleSidebar } from "../utils";
 
@@ -39,7 +39,7 @@ export default function Header() {
 				color="neutral"
 				size="sm"
 			>
-				<MenuRoundedIcon />
+				<MenuRounded />
 			</IconButton>
 		</Sheet>
 	);
